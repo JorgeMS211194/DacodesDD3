@@ -5,6 +5,12 @@ Postman
 Jest
 Express
 
+# agregar diccionario de palabras y querys 
+en la carpeta querys vienen los querys para crear las tablas y vistas que se utilizan
+
+# agregar diccionario de palabras
+Se debe de mover el archivo wordDictionary.txt a la ruta C:/Word para poder ejecutar el insert de los datos a la tabla correspondiente.
+
 # Instalación de dependencias
 npm install
 
