@@ -16,7 +16,7 @@ ALTER TABLE public.dictionary
 
 
 
-*****************************
+-- *****************************
 -- Table: public.users
 
 -- DROP TABLE public.users;
@@ -34,7 +34,7 @@ TABLESPACE pg_default;
 ALTER TABLE public.users
     OWNER to postgres;
 
-**********************************************
+-- **********************************************
 -- Table: public.history
 
 -- DROP TABLE public.history;
@@ -64,7 +64,7 @@ ALTER TABLE public.history
 
 
 
-/***************************** VISTAS ***********************************/
+-- ***************************** VISTAS ***********************************
 -- View: public.vsthistory
 
 -- DROP VIEW public.vsthistory;
@@ -82,7 +82,7 @@ CREATE OR REPLACE VIEW public.vsthistory
 ALTER TABLE public.vsthistory
     OWNER TO postgres;
 
-****************************************************
+-- ****************************************************
 -- View: public.vsttoptenplayers
 
 -- DROP VIEW public.vsttoptenplayers;
@@ -101,6 +101,38 @@ ALTER TABLE public.vsttoptenplayers
     OWNER TO postgres;
 
 
-************************************* Insert Diccionario de Palabras *****************************
+ -- ************************************* Insert Diccionario de Palabras *****************************
 COPY dictionary (word)
 FROM 'C:\Words\wordDictionary.txt';
+
+
+
+
+-- Inserts
+
+-- Diccionario
+COPY dictionary (word)
+FROM 'C:\Words\wordDictionary.txt';
+
+-- Users
+insert into users (username,password) values ('jorge','1234')
+insert into users (username,password) values ('arturo','123')
+insert into users (username,password) values ('marisol','234')
+insert into users (username,password) values ('pedro','324')
+insert into users (username,password) values ('diego','456')
+
+-- history
+insert into history (id_userFk, id_wordFk, winner)
+values (1,60,false)
+insert into history (id_userFk, id_wordFk, winner)
+values (1,60,false)
+insert into history (id_userFk, id_wordFk, winner)
+values (1,60,true)
+insert into history (id_userFk, id_wordFk, winner)
+values (1,123,false)
+insert into history (id_userFk, id_wordFk, winner)
+values (1,181,false)
+insert into history (id_userFk, id_wordFk, winner)
+values (2,233,false)
+insert into history (id_userFk, id_wordFk, winner)
+values (3,7095,false)

@@ -11,6 +11,9 @@ en la carpeta querys vienen los querys para crear las tablas y vistas que se uti
 # agregar diccionario de palabras
 Se debe de mover el archivo wordDictionary.txt a la ruta C:/Word para poder ejecutar el insert de los datos a la tabla correspondiente.
 
+# cambiar los datos de la conexion de la bd (database.js)
+Agregar su configuracion local
+
 # Instalación de dependencias
 npm install
 
@@ -22,7 +25,7 @@ npm test
 
 # Consumo de Endpoints
 
-# ############ POST Login ###############
+# ### POST Login ####
 url:
 http://localhost:8080/login
 headers:
@@ -68,7 +71,7 @@ Body:
 
 
 
-# **************************************** GET *******************************************
+# *** GET ***
 
 # Deberá seleccionar del diccionario una palabra de 5 letras cada 5 minutos y no se deberá repetir la palabra.
 
@@ -103,9 +106,9 @@ A token is required for authentication
 
 
 
-# ############### POST ###################
+# ### POST ###
 
-# ********Permitirá comparar cada letra entre dos palabras*********
+# Permitirá comparar cada letra entre dos palabras
 
 # Si la letra ingresada está en el mismo lugar
 url:
@@ -187,7 +190,7 @@ Ejemplo de salida:
 A token is required for authentication
 
 
-# ############################## GET ##############################
+# ### GET ###
 # seleccionar una nueva palabra
 
 # Falta de token
@@ -220,7 +223,7 @@ Ejemplo de salida:
 ]
 
 
-# ############################  GET  ############################
+# ###  GET  ###
 
 # obtener cuantas partidas a jugado un usuario y cuantas victorias ha tenido
 
@@ -255,7 +258,7 @@ Ejemplo de salida:
     }
 ]
 
-# ############################# GET #######################
+# ### GET ###
 
 # obtener los mejores 10 jugadores con su número de victorias
 
@@ -298,7 +301,7 @@ Ejemplo de salida:
 
 
 
-# ##################################### GET ###################################
+# ### GET ###
 
 # obtener las palabras más acertadas
 
